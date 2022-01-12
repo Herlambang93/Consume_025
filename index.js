@@ -36,7 +36,7 @@ $("#tbl").ready(function () {
       td2.innerHTML = response[i].jenis_barang;
       td3.innerHTML = response[i].harga_barang;
       td7.innerHTML = `<div class ="justify content-center">
-					<a class="btn tombol ms-2" href="edit.html?idsepatu=${response[i].idbarang}">Edit </a>
+					<a class="btn tombol ms-2" href="edit.html?idbarang=${response[i].idbarang}">Edit </a>
 					<button type ="button" class="btn tombol ms-2" onclick="del(${response[i].idbarang});">Delete</button>
 					</div>`;
     }
